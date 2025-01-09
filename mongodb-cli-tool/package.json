@@ -1,0 +1,17 @@
+{
+  "name": "mongodb-cli-tool",
+  "version": "1.0.0",
+  "description": "CLI tool and API for seeding and searching data in MongoDB",
+  "main": "cli_tool.js",
+  "scripts": {
+    "start": "node cli_tool.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0",
+    "yargs": "^17.7.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
