@@ -3,13 +3,8 @@ const express = require("express");
 const yargs = require("yargs");
 const searchRouter = require("./router/searchRouter");
 const SEED_DATA = require("./utils/seed-data");
-<<<<<<< HEAD
 const cors = require("cors")
 require("dotenv").config();
-=======
-const cors = require("cors");
-require('dotenv').config();
->>>>>>> c8b3bb6 (added .env file and respective changed to the cli tool and gitignore to make use of the .env file)
 
 const app = express();
 const port = 3000;
@@ -60,21 +55,13 @@ async function performAction(action, db) {
     })
     .option("db", {
         alias: "d",
-<<<<<<< HEAD
-        default: process.env.MONGODB_URI, // Use environment variable for MongoDB URI
-=======
         default: process.env.MONGODB_URI,
->>>>>>> c8b3bb6 (added .env file and respective changed to the cli tool and gitignore to make use of the .env file)
         describe: "MongoDB connection string.",
         type: "string"
     })
     .option("dbname", {
         alias: "n",
-<<<<<<< HEAD
-        default: process.env.DB_NAME, // Use environment variable for database name
-=======
         default: process.env.DB_NAME,
->>>>>>> c8b3bb6 (added .env file and respective changed to the cli tool and gitignore to make use of the .env file)
         describe: "Database name.",
         type: "string"
     })
